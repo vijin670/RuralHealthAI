@@ -1,0 +1,170 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ruralhealthai.app"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Network access for API calls -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:7:5-79
+13-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:7:22-76
+14
+15    <!-- Location for hospital finder -->
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:10:5-79
+16-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:10:22-76
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:11:5-81
+17-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:11:22-78
+18
+19    <!-- Microphone for voice input -->
+20    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+20-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:14:5-71
+20-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:14:22-68
+21
+22    <permission
+22-->[androidx.core:core:1.13.1] C:\Users\vviji\.gradle\caches\8.13\transforms\ac38eb65c24c44cea8411f49fca9a2ea\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+23        android:name="com.ruralhealthai.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+23-->[androidx.core:core:1.13.1] C:\Users\vviji\.gradle\caches\8.13\transforms\ac38eb65c24c44cea8411f49fca9a2ea\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+24        android:protectionLevel="signature" />
+24-->[androidx.core:core:1.13.1] C:\Users\vviji\.gradle\caches\8.13\transforms\ac38eb65c24c44cea8411f49fca9a2ea\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+25
+26    <uses-permission android:name="com.ruralhealthai.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+26-->[androidx.core:core:1.13.1] C:\Users\vviji\.gradle\caches\8.13\transforms\ac38eb65c24c44cea8411f49fca9a2ea\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+26-->[androidx.core:core:1.13.1] C:\Users\vviji\.gradle\caches\8.13\transforms\ac38eb65c24c44cea8411f49fca9a2ea\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+27
+28    <application
+28-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:16:5-34:19
+29        android:allowBackup="true"
+29-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:17:9-35
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.13.1] C:\Users\vviji\.gradle\caches\8.13\transforms\ac38eb65c24c44cea8411f49fca9a2ea\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+31        android:debuggable="true"
+32        android:extractNativeLibs="false"
+33        android:label="@string/app_name"
+33-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:18:9-41
+34        android:supportsRtl="true"
+34-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:19:9-35
+35        android:theme="@style/Theme.RuralHealthAI"
+35-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:20:9-51
+36        android:usesCleartextTraffic="true" >
+36-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:21:9-44
+37        <activity
+37-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:24:9-33:20
+38            android:name="com.ruralhealthai.app.MainActivity"
+38-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:25:13-41
+39            android:exported="true"
+39-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:26:13-36
+40            android:theme="@style/Theme.RuralHealthAI"
+40-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:27:13-55
+41            android:windowSoftInputMode="adjustResize" >
+41-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:28:13-55
+42            <intent-filter>
+42-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:29:13-32:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:30:17-69
+43-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:30:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:31:17-77
+45-->C:\Users\vviji\.gemini\antigravity\scratch\RuralHealthAI\android\app\src\main\AndroidManifest.xml:31:27-74
+46            </intent-filter>
+47        </activity>
+48        <activity
+48-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\vviji\.gradle\caches\8.13\transforms\219b24649308439eef5147f2bfec3abc\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+49            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+49-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\vviji\.gradle\caches\8.13\transforms\219b24649308439eef5147f2bfec3abc\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+50            android:exported="false"
+50-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\vviji\.gradle\caches\8.13\transforms\219b24649308439eef5147f2bfec3abc\transformed\play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+51            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+51-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\vviji\.gradle\caches\8.13\transforms\219b24649308439eef5147f2bfec3abc\transformed\play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+52
+53        <meta-data
+53-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\vviji\.gradle\caches\8.13\transforms\17171a3362dd8b8a7597a2637ead23ec\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+54            android:name="com.google.android.gms.version"
+54-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\vviji\.gradle\caches\8.13\transforms\17171a3362dd8b8a7597a2637ead23ec\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+55            android:value="@integer/google_play_services_version" />
+55-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\vviji\.gradle\caches\8.13\transforms\17171a3362dd8b8a7597a2637ead23ec\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+56
+57        <provider
+57-->[androidx.emoji2:emoji2:1.3.0] C:\Users\vviji\.gradle\caches\8.13\transforms\ebd5d48b33874da1ad8b58d5ee413e6e\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+58            android:name="androidx.startup.InitializationProvider"
+58-->[androidx.emoji2:emoji2:1.3.0] C:\Users\vviji\.gradle\caches\8.13\transforms\ebd5d48b33874da1ad8b58d5ee413e6e\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+59            android:authorities="com.ruralhealthai.app.androidx-startup"
+59-->[androidx.emoji2:emoji2:1.3.0] C:\Users\vviji\.gradle\caches\8.13\transforms\ebd5d48b33874da1ad8b58d5ee413e6e\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+60            android:exported="false" >
+60-->[androidx.emoji2:emoji2:1.3.0] C:\Users\vviji\.gradle\caches\8.13\transforms\ebd5d48b33874da1ad8b58d5ee413e6e\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+61            <meta-data
+61-->[androidx.emoji2:emoji2:1.3.0] C:\Users\vviji\.gradle\caches\8.13\transforms\ebd5d48b33874da1ad8b58d5ee413e6e\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+62                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+62-->[androidx.emoji2:emoji2:1.3.0] C:\Users\vviji\.gradle\caches\8.13\transforms\ebd5d48b33874da1ad8b58d5ee413e6e\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+63                android:value="androidx.startup" />
+63-->[androidx.emoji2:emoji2:1.3.0] C:\Users\vviji\.gradle\caches\8.13\transforms\ebd5d48b33874da1ad8b58d5ee413e6e\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+64            <meta-data
+64-->[androidx.lifecycle:lifecycle-process:2.8.0] C:\Users\vviji\.gradle\caches\8.13\transforms\c285fef7c3fafe0a02f44ef67aa54cb6\transformed\lifecycle-process-2.8.0\AndroidManifest.xml:29:13-31:52
+65                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+65-->[androidx.lifecycle:lifecycle-process:2.8.0] C:\Users\vviji\.gradle\caches\8.13\transforms\c285fef7c3fafe0a02f44ef67aa54cb6\transformed\lifecycle-process-2.8.0\AndroidManifest.xml:30:17-78
+66                android:value="androidx.startup" />
+66-->[androidx.lifecycle:lifecycle-process:2.8.0] C:\Users\vviji\.gradle\caches\8.13\transforms\c285fef7c3fafe0a02f44ef67aa54cb6\transformed\lifecycle-process-2.8.0\AndroidManifest.xml:31:17-49
+67            <meta-data
+67-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\vviji\.gradle\caches\8.13\transforms\eaaeae0fc3b5fe3578db542952da79dc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+68                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+68-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\vviji\.gradle\caches\8.13\transforms\eaaeae0fc3b5fe3578db542952da79dc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+69                android:value="androidx.startup" />
+69-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\vviji\.gradle\caches\8.13\transforms\eaaeae0fc3b5fe3578db542952da79dc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+70        </provider>
+71
+72        <activity
+72-->[androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\vviji\.gradle\caches\8.13\transforms\27208dd8c5ea2bab099a35e6ed46d3dc\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+73            android:name="androidx.compose.ui.tooling.PreviewActivity"
+73-->[androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\vviji\.gradle\caches\8.13\transforms\27208dd8c5ea2bab099a35e6ed46d3dc\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+74            android:exported="true" />
+74-->[androidx.compose.ui:ui-tooling-android:1.6.7] C:\Users\vviji\.gradle\caches\8.13\transforms\27208dd8c5ea2bab099a35e6ed46d3dc\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+75
+76        <receiver
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\vviji\.gradle\caches\8.13\transforms\eaaeae0fc3b5fe3578db542952da79dc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+77            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\vviji\.gradle\caches\8.13\transforms\eaaeae0fc3b5fe3578db542952da79dc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+78            android:directBootAware="false"
+78-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\vviji\.gradle\caches\8.13\transforms\eaaeae0fc3b5fe3578db542952da79dc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+79            android:enabled="true"
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\vviji\.gradle\caches\8.13\transforms\eaaeae0fc3b5fe3578db542952da79dc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+80            android:exported="true"
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\vviji\.gradle\caches\8.13\transforms\eaaeae0fc3b5fe3578db542952da79dc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+81            android:permission="android.permission.DUMP" >
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\vviji\.gradle\caches\8.13\transforms\eaaeae0fc3b5fe3578db542952da79dc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+82            <intent-filter>
+82-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\vviji\.gradle\caches\8.13\transforms\eaaeae0fc3b5fe3578db542952da79dc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+83                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\vviji\.gradle\caches\8.13\transforms\eaaeae0fc3b5fe3578db542952da79dc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\vviji\.gradle\caches\8.13\transforms\eaaeae0fc3b5fe3578db542952da79dc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+84            </intent-filter>
+85            <intent-filter>
+85-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\vviji\.gradle\caches\8.13\transforms\eaaeae0fc3b5fe3578db542952da79dc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+86                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\vviji\.gradle\caches\8.13\transforms\eaaeae0fc3b5fe3578db542952da79dc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\vviji\.gradle\caches\8.13\transforms\eaaeae0fc3b5fe3578db542952da79dc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+87            </intent-filter>
+88            <intent-filter>
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\vviji\.gradle\caches\8.13\transforms\eaaeae0fc3b5fe3578db542952da79dc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+89                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\vviji\.gradle\caches\8.13\transforms\eaaeae0fc3b5fe3578db542952da79dc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\vviji\.gradle\caches\8.13\transforms\eaaeae0fc3b5fe3578db542952da79dc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+90            </intent-filter>
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\vviji\.gradle\caches\8.13\transforms\eaaeae0fc3b5fe3578db542952da79dc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+92                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\vviji\.gradle\caches\8.13\transforms\eaaeae0fc3b5fe3578db542952da79dc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\vviji\.gradle\caches\8.13\transforms\eaaeae0fc3b5fe3578db542952da79dc\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+93            </intent-filter>
+94        </receiver>
+95    </application>
+96
+97</manifest>

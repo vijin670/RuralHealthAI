@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rural Health AI</string>
+    <string name="app_description">Multilingual Symptom Triage Assistant</string>
+    
+    <!-- Input labels -->
+    <string name="label_age">Age</string>
+    <string name="label_gender">Gender</string>
+    <string name="label_symptoms">Symptoms</string>
+    <string name="label_vitals">Vitals (Optional)</string>
+    <string name="label_language">Select Language</string>
+    
+    <!-- Actions -->
+    <string name="action_analyze">Analyze Symptoms</string>
+    <string name="action_analyzing">Analyzing…</string>
+    <string name="action_voice">Voice Input</string>
+    <string name="action_reset">New Assessment</string>
+    
+    <!-- Sections -->
+    <string name="section_results">Assessment Results</string>
+    <string name="section_hospitals">Nearby Hospitals</string>
+    <string name="section_first_aid">First-Aid Steps</string>
+    <string name="section_conditions">Probable Conditions</string>
+    
+    <!-- Triage levels -->
+    <string name="triage_self_care">SELF-CARE</string>
+    <string name="triage_clinic">CLINIC VISIT</string>
+    <string name="triage_hospital">HOSPITAL</string>
+    <string name="triage_emergency">⚠ EMERGENCY</string>
+    
+    <!-- Disclaimer -->
+    <string name="disclaimer">This app provides AI-generated guidance only. It is NOT a substitute for professional medical advice. Always consult a qualified doctor.</string>
+    
+    <!-- Errors -->
+    <string name="error_age">Please enter your age</string>
+    <string name="error_symptoms">Please describe your symptoms</string>
+    <string name="error_network">Connection error. Please try again.</string>
+    <string name="error_voice">Voice recognition not available</string>
+</resources>

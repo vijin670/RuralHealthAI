@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#FF0A1628</color>
+    <color name="primary">#FF0D7377</color>
+    <color name="primary_variant">#FF14575A</color>
+    <color name="secondary">#FF44B78B</color>
+    <color name="status_bar">#FF0A1628</color>
+    <color name="surface">#FF112240</color>
+    <color name="text_primary">#FFE8ECF4</color>
+    <color name="text_secondary">#FFA8B4C8</color>
+    <color name="triage_clinic">#FFFFC107</color>
+    <color name="triage_emergency">#FFF44336</color>
+    <color name="triage_hospital">#FFFF9800</color>
+    <color name="triage_self_care">#FF4CAF50</color>
+    <string name="action_analyze">Analyze Symptoms</string>
+    <string name="action_analyzing">Analyzing…</string>
+    <string name="action_reset">New Assessment</string>
+    <string name="action_voice">Voice Input</string>
+    <string name="app_description">Multilingual Symptom Triage Assistant</string>
+    <string name="app_name">Rural Health AI</string>
+    <string name="disclaimer">This app provides AI-generated guidance only. It is NOT a substitute for professional medical advice. Always consult a qualified doctor.</string>
+    <string name="error_age">Please enter your age</string>
+    <string name="error_network">Connection error. Please try again.</string>
+    <string name="error_symptoms">Please describe your symptoms</string>
+    <string name="error_voice">Voice recognition not available</string>
+    <string name="label_age">Age</string>
+    <string name="label_gender">Gender</string>
+    <string name="label_language">Select Language</string>
+    <string name="label_symptoms">Symptoms</string>
+    <string name="label_vitals">Vitals (Optional)</string>
+    <string name="section_conditions">Probable Conditions</string>
+    <string name="section_first_aid">First-Aid Steps</string>
+    <string name="section_hospitals">Nearby Hospitals</string>
+    <string name="section_results">Assessment Results</string>
+    <string name="triage_clinic">CLINIC VISIT</string>
+    <string name="triage_emergency">⚠ EMERGENCY</string>
+    <string name="triage_hospital">HOSPITAL</string>
+    <string name="triage_self_care">SELF-CARE</string>
+    <style name="Theme.RuralHealthAI" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">@color/status_bar</item>
+        <item name="android:navigationBarColor">@color/background</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+</resources>

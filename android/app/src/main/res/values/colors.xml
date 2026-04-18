@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary palette -->
+    <color name="primary">#FF0D7377</color>
+    <color name="primary_variant">#FF14575A</color>
+    <color name="secondary">#FF44B78B</color>
+    
+    <!-- Background -->
+    <color name="background">#FF0A1628</color>
+    <color name="surface">#FF112240</color>
+    
+    <!-- Triage colors -->
+    <color name="triage_self_care">#FF4CAF50</color>
+    <color name="triage_clinic">#FFFFC107</color>
+    <color name="triage_hospital">#FFFF9800</color>
+    <color name="triage_emergency">#FFF44336</color>
+    
+    <!-- Text -->
+    <color name="text_primary">#FFE8ECF4</color>
+    <color name="text_secondary">#FFA8B4C8</color>
+    
+    <!-- Status bar -->
+    <color name="status_bar">#FF0A1628</color>
+</resources>
