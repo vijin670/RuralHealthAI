@@ -67,7 +67,7 @@ app.add_middleware(
 )
 
 
-@app.get("/")
+@app.get("/api")
 async def root():
     """Health check endpoint."""
     return {
@@ -77,7 +77,7 @@ async def root():
     }
 
 
-@app.post("/triage", response_model=TriageResponse)
+@app.post("/api/triage", response_model=TriageResponse)
 async def triage_symptoms(request: TriageRequest):
     """
     Analyze patient symptoms and return triage assessment.
@@ -150,7 +150,7 @@ async def triage_symptoms(request: TriageRequest):
         )
 
 
-@app.post("/hospitals")
+@app.post("/api/hospitals")
 async def get_hospitals(request: HospitalRequest):
     """
     Find nearby hospitals using OpenStreetMap Overpass API.
@@ -178,7 +178,7 @@ async def get_hospitals(request: HospitalRequest):
         )
 
 
-@app.post("/translate", response_model=TranslateResponse)
+@app.post("/api/translate", response_model=TranslateResponse)
 async def translate(request: TranslateRequest):
     """
     Translate text between supported languages.

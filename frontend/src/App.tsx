@@ -6,7 +6,7 @@ import { InputForm } from './components/InputForm';
 import { TriageResultCard } from './components/TriageResultCard';
 import { HospitalListCard } from './components/HospitalListCard';
 
-const API_URL = 'http://localhost:8000';
+const API_URL = import.meta.env.VITE_API_URL || '/api';
 
 const initialState: TriageUiState = {
   age: '',
