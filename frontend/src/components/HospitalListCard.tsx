@@ -1,18 +1,22 @@
 import type { HospitalInfo } from '../types';
 import { MapPin, Phone, Navigation } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { getTranslations } from '../i18n';
 
 interface HospitalListCardProps {
   hospitals: HospitalInfo[];
   isLoading: boolean;
+  selectedLanguage: string;
 }
 
-export function HospitalListCard({ hospitals, isLoading }: HospitalListCardProps) {
+export function HospitalListCard({ hospitals, isLoading, selectedLanguage }: HospitalListCardProps) {
+  const t = getTranslations(selectedLanguage);
+
   if (isLoading) {
     return (
       <div className="glass-card rounded-2xl p-8 flex flex-col items-center justify-center text-center">
         <div className="w-10 h-10 border-4 border-primary-DEFAULT border-t-transparent rounded-full animate-spin mb-4" />
-        <p className="text-text-secondary">Searching for nearby hospitals...</p>
+        <p className="text-text-secondary">{t.searchingHospitals}</p>
       </div>
     );
   }
@@ -21,7 +25,7 @@ export function HospitalListCard({ hospitals, isLoading }: HospitalListCardProps
     return (
       <div className="glass-card rounded-2xl p-8 flex flex-col items-center justify-center text-center">
         <MapPin size={32} className="text-text-tertiary mb-3" />
-        <p className="text-text-secondary">No hospitals found nearby or location access denied.</p>
+        <p className="text-text-secondary">{t.noHospitalsFound}</p>
       </div>
     );
   }
@@ -30,9 +34,11 @@ export function HospitalListCard({ hospitals, isLoading }: HospitalListCardProps
     <div className="glass-card rounded-2xl overflow-hidden">
       <div className="p-6 bg-background-variant/30 border-b border-background-variant">
         <h2 className="text-xl font-bold flex items-center gap-2">
-          <MapPin className="text-primary-DEFAULT" /> Nearby Facilities
+          <MapPin className="text-primary-DEFAULT" /> {t.nearbyFacilities}
         </h2>
-        <p className="text-sm text-text-tertiary mt-1">Found {hospitals.length} locations within range</p>
+        <p className="text-sm text-text-tertiary mt-1">
+          {hospitals.length} {t.locationsFound}
+        </p>
       </div>
       
       <div className="divide-y divide-background-variant">
@@ -49,7 +55,7 @@ export function HospitalListCard({ hospitals, isLoading }: HospitalListCardProps
             <div className="space-y-2 text-sm">
               <div className="flex items-start gap-2 text-accent-blue">
                 <Navigation size={16} className="shrink-0 mt-0.5" />
-                <span className="font-medium">{hospital.distance_km} km away</span>
+                <span className="font-medium">{hospital.distance_km} {t.kmAway}</span>
               </div>
               
               {hospital.address && (

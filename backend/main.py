@@ -105,18 +105,14 @@ async def triage_symptoms(request: TriageRequest):
                     request.vitals, request.language, "en"
                 )
         
-        # Step 2: Get AI triage response
+        # Step 2: Get AI triage response (AI responds directly in target language)
         ai_result = get_triage_response(
             age=request.age,
             gender=request.gender,
             symptoms=symptoms_en,
-            vitals=vitals_en
+            vitals=vitals_en,
+            language=request.language
         )
-        
-        # Step 3: Translate response back to requested language
-        if request.language != "en":
-            logger.info(f"Translating response to {request.language}")
-            ai_result = translate_triage_response(ai_result, request.language)
         
         # Step 4: Build response
         conditions = [
@@ -132,6 +128,8 @@ async def triage_symptoms(request: TriageRequest):
             triage_level=ai_result.get("triage_level", "clinic"),
             conditions=conditions,
             first_aid=ai_result.get("first_aid", []),
+            summary=ai_result.get('summary'),
+            next_steps=ai_result.get('next_steps', []),
             follow_up_question=ai_result.get("follow_up_question"),
             disclaimer=ai_result.get(
                 "disclaimer",

@@ -36,6 +36,14 @@ class TriageResponse(BaseModel):
         default_factory=list,
         description="First-aid instruction steps"
     )
+    summary: Optional[str] = Field(
+        None,
+        description="A compassionate 2-3 sentence paragraph about what the patient likely has"
+    )
+    next_steps: List[str] = Field(
+        default_factory=list,
+        description="Concrete actionable next steps (see doctor, get tests, etc.)"
+    )
     follow_up_question: Optional[str] = Field(
         None,
         description="Follow-up question if symptoms are unclear"

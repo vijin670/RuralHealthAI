@@ -10,6 +10,8 @@ export interface TriageResponse {
   triage_level: 'self-care' | 'clinic' | 'hospital' | 'emergency';
   conditions: ConditionInfo[];
   first_aid: string[];
+  summary?: string;
+  next_steps?: string[];
   follow_up_question?: string;
   disclaimer: string;
 }
