@@ -41,7 +41,7 @@ export function InputForm({ state, updateState }: InputFormProps) {
               type="number"
               value={state.age}
               onChange={(e) => updateState({ age: e.target.value })}
-              className="glass-input pl-10"
+              className="glass-input-icon-left"
               placeholder={t.agePlaceholder}
               min="0"
               max="120"
@@ -82,7 +82,7 @@ export function InputForm({ state, updateState }: InputFormProps) {
             <textarea
               value={state.symptoms}
               onChange={(e) => updateState({ symptoms: e.target.value })}
-              className="glass-input pl-10 min-h-[120px] resize-y"
+              className="glass-input-icon-left min-h-[120px] resize-y"
               placeholder={t.symptomsPlaceholder}
             ></textarea>
           </div>
@@ -106,7 +106,7 @@ export function InputForm({ state, updateState }: InputFormProps) {
             type="text"
             value={state.vitals}
             onChange={(e) => updateState({ vitals: e.target.value })}
-            className="glass-input pl-10"
+            className="glass-input-icon-left"
             placeholder={t.vitalsPlaceholder}
           />
         </div>

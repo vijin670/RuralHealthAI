@@ -14,7 +14,11 @@
   }
   
   .glass-input {
-    @apply bg-background-variant/40 border border-background-variant focus:border-primary-light focus:ring-1 focus:ring-primary-light transition-all rounded-xl w-full p-3 outline-none text-text-primary placeholder:text-text-tertiary;
+    @apply bg-background-variant/40 border border-background-variant focus:border-primary-light focus:ring-1 focus:ring-primary-light transition-all rounded-xl w-full py-3 px-4 outline-none text-text-primary placeholder:text-text-tertiary;
+  }
+  
+  .glass-input-icon-left {
+    @apply glass-input pl-12;
   }
 
   .gradient-bg {

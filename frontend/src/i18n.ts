@@ -49,7 +49,7 @@ export interface Translations {
 
 const translations: Record<LangCode, Translations> = {
   en: {
-    appTitle: 'Rural Health AI',
+    appTitle: 'RuralHealthAI',
     appSubtitle: 'Multilingual Symptom Triage Assistant',
     selectLanguage: 'Select Language',
     symptomAssessment: 'Symptom Assessment',
@@ -95,7 +95,7 @@ const translations: Record<LangCode, Translations> = {
     stopVoice: 'Stop Listening',
   },
   hi: {
-    appTitle: 'ग्रामीण स्वास्थ्य AI',
+    appTitle: 'RuralHealthAI',
     appSubtitle: 'बहुभाषी लक्षण जाँच सहायक',
     selectLanguage: 'भाषा चुनें',
     symptomAssessment: 'लक्षण मूल्यांकन',
@@ -141,7 +141,7 @@ const translations: Record<LangCode, Translations> = {
     stopVoice: 'सुनना बंद करें',
   },
   ta: {
-    appTitle: 'கிராமப்புற சுகாதார AI',
+    appTitle: 'RuralHealthAI',
     appSubtitle: 'பன்மொழி அறிகுறி பரிசோதனை உதவி',
     selectLanguage: 'மொழியைத் தேர்ந்தெடுக்கவும்',
     symptomAssessment: 'அறிகுறி மதிப்பீடு',
@@ -187,7 +187,7 @@ const translations: Record<LangCode, Translations> = {
     stopVoice: 'நிறுத்து',
   },
   te: {
-    appTitle: 'గ్రామీణ ఆరోగ్యం AI',
+    appTitle: 'RuralHealthAI',
     appSubtitle: 'బహుభాషా లక్షణ పరీక్ష సహాయకం',
     selectLanguage: 'భాషను ఎంచుకోండి',
     symptomAssessment: 'లక్షణ అంచనా',
