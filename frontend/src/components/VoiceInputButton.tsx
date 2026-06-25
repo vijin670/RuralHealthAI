@@ -1,5 +1,23 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Mic, MicOff } from 'lucide-react';
+
+// Clean Custom Inline SVGs to avoid any layout squashing or external library loading issues
+const MicIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
+  <svg className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+    <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+    <line x1="12" y1="19" x2="12" y2="22" />
+  </svg>
+);
+
+const MicOffIcon = ({ className = "w-6 h-6" }: { className?: string }) => (
+  <svg className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+    <line x1="2" y1="2" x2="22" y2="22" />
+    <path d="M18.89 13.23A7.12 7.12 0 0 0 19 12v-2" />
+    <path d="M5 10v1.5a7 7 0 0 0 10.74 5.92" />
+    <path d="M10.12 5.12A3 3 0 0 1 15 7v3.88" />
+    <line x1="12" y1="19" x2="12" y2="22" />
+  </svg>
+);
 
 interface VoiceInputButtonProps {
   onTranscription: (text: string) => void;
@@ -84,7 +102,7 @@ export function VoiceInputButton({ onTranscription, languageCode }: VoiceInputBu
         }`}
         title={isListening ? "Stop Listening" : "Start Voice Input"}
       >
-        {isListening ? <MicOff size={24} /> : <Mic size={24} />}
+        {isListening ? <MicOffIcon className="w-6 h-6 shrink-0" /> : <MicIcon className="w-6 h-6 shrink-0" />}
       </button>
     </div>
   );

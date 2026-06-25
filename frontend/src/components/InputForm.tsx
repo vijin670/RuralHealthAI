@@ -1,8 +1,27 @@
-import { User, Activity, FileEdit } from 'lucide-react';
 import { LanguageSelector } from './LanguageSelector';
 import { VoiceInputButton } from './VoiceInputButton';
 import type { TriageUiState } from '../types';
 import { getTranslations } from '../i18n';
+
+const UserIcon = ({ className = "w-5 h-5" }: { className?: string }) => (
+  <svg className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+    <circle cx="12" cy="7" r="4" />
+  </svg>
+);
+
+const FileEditIcon = ({ className = "w-5 h-5" }: { className?: string }) => (
+  <svg className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+    <path d="M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4z" />
+  </svg>
+);
+
+const ActivityIcon = ({ className = "w-5 h-5" }: { className?: string }) => (
+  <svg className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+  </svg>
+);
 
 interface InputFormProps {
   state: TriageUiState;
@@ -34,8 +53,8 @@ export function InputForm({ state, updateState }: InputFormProps) {
         <div className="flex-1 relative">
           <label className="block text-text-secondary text-sm font-semibold mb-1">{t.age}</label>
           <div className="relative">
-            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <User size={18} className="text-primary-DEFAULT" />
+            <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+              <UserIcon className="text-primary-DEFAULT shrink-0 w-[18px] h-[18px]" />
             </div>
             <input 
               type="number"
@@ -76,8 +95,8 @@ export function InputForm({ state, updateState }: InputFormProps) {
         <label className="block text-text-secondary text-sm font-semibold mb-2">📋 {t.describeSymptoms}</label>
         <div className="flex items-start gap-4">
           <div className="relative flex-1">
-            <div className="absolute top-3 left-3 pointer-events-none">
-              <FileEdit size={18} className="text-primary-DEFAULT" />
+            <div className="absolute top-3.5 left-3.5 pointer-events-none">
+              <FileEditIcon className="text-primary-DEFAULT shrink-0 w-[18px] h-[18px]" />
             </div>
             <textarea
               value={state.symptoms}
@@ -99,8 +118,8 @@ export function InputForm({ state, updateState }: InputFormProps) {
       <div className="relative">
         <label className="block text-text-secondary text-sm font-semibold mb-1">{t.vitalsLabel}</label>
         <div className="relative">
-          <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-            <Activity size={18} className="text-primary-DEFAULT" />
+          <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+            <ActivityIcon className="text-primary-DEFAULT shrink-0 w-[18px] h-[18px]" />
           </div>
           <input 
             type="text"

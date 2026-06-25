@@ -18,7 +18,8 @@
   }
   
   .glass-input-icon-left {
-    @apply glass-input pl-12;
+    @apply glass-input;
+    padding-left: 3.5rem !important;
   }
 
   .gradient-bg {

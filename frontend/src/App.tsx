@@ -1,12 +1,27 @@
 import { useState } from 'react';
 import axios from 'axios';
-import { RefreshCcw, Stethoscope } from 'lucide-react';
 import type { TriageUiState, TriageResponse, HospitalInfo } from './types';
 import { InputForm } from './components/InputForm';
 import { TriageResultCard } from './components/TriageResultCard';
 import { HospitalListCard } from './components/HospitalListCard';
 import { FloatingParticles } from './components/FloatingParticles';
 import { getTranslations } from './i18n';
+
+// Clean Custom Inline SVGs to avoid any layout squashing or external library loading issues
+const StethoscopeIcon = ({ className = "w-8 h-8" }: { className?: string }) => (
+  <svg className={className} fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+  </svg>
+);
+
+const RefreshCcwIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
+  <svg className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+    <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+    <path d="M3 3v5h5" />
+    <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16" />
+    <path d="M16 16h5v5" />
+  </svg>
+);
 
 const API_URL = import.meta.env.VITE_API_URL || '/api';
 
@@ -111,8 +126,8 @@ function App() {
       {/* Main Content (relative z-10 for overlapping floaters) */}
       <div className="w-full max-w-4xl flex items-center justify-between mb-8 relative z-10">
         <div className="flex items-center gap-4">
-          <div className="p-3 bg-gradient-to-br from-primary-DEFAULT to-secondary-DEFAULT rounded-2xl shadow-lg animate-pulse-glow" style={{ animationDuration: '6s' }}>
-            <Stethoscope className="text-white animate-spin-slow" size={32} />
+          <div className="p-3 bg-gradient-to-br from-primary-DEFAULT to-secondary-DEFAULT rounded-2xl shadow-lg animate-pulse-glow shrink-0" style={{ animationDuration: '6s' }}>
+            <StethoscopeIcon className="text-white animate-spin-slow w-8 h-8 shrink-0" />
           </div>
           <div>
             <h1 className="text-3xl font-black tracking-tight text-white">{t.appTitle}</h1>
@@ -142,7 +157,7 @@ function App() {
                 onClick={resetForm}
                 className="flex items-center gap-2 text-sm font-semibold text-primary-light hover:text-white transition-all bg-primary-DEFAULT/10 hover:bg-primary-DEFAULT/25 px-4 py-2 rounded-xl border border-primary-DEFAULT/20 hover:border-primary-DEFAULT/50"
               >
-                <RefreshCcw size={15} /> {t.newAssessment}
+                <RefreshCcwIcon className="w-4 h-4 shrink-0" /> {t.newAssessment}
               </button>
             )}
           </div>
